@@ -12,7 +12,7 @@ Included in this repository are:
 
 - **`Sample_CSVs/`**: This directory contains sample CSV files that can be used to test the template's functionality. These files simulate typical data that might be loaded from SharePoint, including examples with various common data issues (e.g., blank rows, inconsistent text formatting, duplicate records).
   
-- **`PowerBI_Template.pbit`**: This is the Power BI template file that includes the Power Query parameters, custom functions, and queries necessary to replicate the solution discussed in the blog post. The template is designed to be easily adaptable to different datasets and SharePoint locations.
+- **`m-query-functions.pbit`**: This is the Power BI template file that includes the Power Query parameters, custom functions, and queries necessary to replicate the solution discussed in the blog post. The template is designed to be easily adaptable to different datasets and SharePoint locations.
 
 ## Getting Started
 

@@ -2,7 +2,9 @@
 
 ## Overview
 
-This repository contains a Power BI template designed to automate the loading, cleaning, and transformation of CSV files stored in SharePoint. The template leverages Power Query functions and parameters to create a flexible and reusable solution for data preparation, ensuring that datasets are consistently cleaned and properly formatted for analysis.
+This repository contains a Power BI template designed to automate the loading, cleaning, and transformation of CSV files stored in SharePoint. It contains the sample files discussed in the blog post [Power Query Functions: Building Flexible and Reusable Data Cleaning Routines](https://ethanguyant.com/2024/08/29/power-query-functions-building-flexible-and-reusable-data-cleaning-routines/).
+
+The template leverages Power Query functions and parameters to create a flexible and reusable solution for data preparation, ensuring that datasets are consistently cleaned and properly formatted for analysis.
 
 Included in this repository are:
 - A set of sample source CSV files.
@@ -40,7 +42,29 @@ Included in this repository are:
      - **`replaceValue`**: Specify the value to replace errors in your dataset (if applicable).
      - **`errorHandlingOption`**: Choose how to handle errors (`RemoveErrors` or `ReplaceErrors`).
      - **`viewErrorSummary`**: Decide whether to display a summary of errors (`true` or `false`).
-
+   - If using the sample files in this repository, the parameters can be set to the following:
+     ```text
+     SharePoint Site Url: 
+      https://yourcompany.sharepoint.com/sites/yoursite
+      
+      SharePoint Folder Path:
+      https://yourcompany.sharepoint.com/sites/yoursite/yourfolder/
+      
+      textFormatCase:
+      Proper
+      
+      textColumns:
+      Event Name, Location, Organizer Name
+      
+      columnDataTypes:
+      Event Date,date;Event ID,whole number;Event Name,text;Location,text;Organizer Name,text;Number of Attendees,whole number;Feedback Score,decimal number
+      
+      errorHandlingOption:
+      ReplaceErrors
+      
+      viewErrorSummary:
+      FALSE
+      ```
 4. **Load and Transform Data**:
    - The template will automatically connect to the specified SharePoint site, load the CSV files, and apply the predefined transformations. The final cleaned dataset will be ready for analysis within Power BI.
 
